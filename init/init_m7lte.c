@@ -56,8 +56,8 @@ void vendor_load_properties()
     if (strstr(bootmid, "PN0731000")) {
         /* m7vzw (m7wlv) */
         cdma_properties("0", "10", "311480", "Verizon");
-        property_set("ro.build.fingerprint", "VERIZON/HTCOneVZW/m7wlv:4.4.2/KOT49H/304035.1:user/release-keys");
-        property_set("ro.build.description", "3.11.605.1 CL304035 release-keys");
+        property_set("ro.build.fingerprint", "VERIZON/HTCOneVZW/m7wlv:4.4.2/KOT49H/334342.3:user/release-keys");
+        property_set("ro.build.description", "4.10.605.3 CL334342 release-keys");
         property_set("ro.product.device", "m7vzw");
         property_set("ro.build.product", "m7vzw");
         property_set("ro.cdma.subscribe_on_ruim_ready", "true");
@@ -67,8 +67,8 @@ void vendor_load_properties()
     } else if (strstr(bootmid, "PN0720000")) {
         /* m7spr (m7whl) */
         cdma_properties("1", "10", "310120", "Sprint");
-        property_set("ro.build.fingerprint", "htc/sprint_wwe/m7wls:4.4.2/KOT49H/303687.4:user/release-keys");
-        property_set("ro.build.description", "4.06.651.4 CL303687 release-keys");
+        property_set("ro.build.fingerprint", "htc/sprint_wwe/m7wls:4.4.2/KOT49H/337390.3:user/release-keys");
+        property_set("ro.build.description", "5.03.651.3 CL337390 release-keys");
         property_set("ro.product.device", "m7spr");
         property_set("ro.build.product", "m7spr");
         property_set("telephony.sms.pseudo_multipart", "1");
@@ -79,8 +79,8 @@ void vendor_load_properties()
         property_set("persist.radio.apm_sim_not_pwdn", "1");
     } else {
         /* m7 */
-        property_set("ro.build.fingerprint", "htc/m7_google/m7:4.4.2/KOT49H.H1/288144:user/release-keys");
-        property_set("ro.build.description", "3.62.1700.1 CL288144 release-keys");
+        property_set("ro.build.fingerprint", "htc/m7_google/m7:4.4.3/KTU84L.H4/347097:user/release-keys");
+        property_set("ro.build.description", "4.07.1700.4 CL347097 release-keys");
         property_set("ro.product.device", "m7");
         property_set("ro.telephony.default_network", "9");
         property_set("telephony.lteOnGsmDevice", "1");
