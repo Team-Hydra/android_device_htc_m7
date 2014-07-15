@@ -86,7 +86,6 @@ void vendor_load_properties()
         property_set("telephony.lteOnGsmDevice", "1");
     }
 
-    property_set("ro.product.model", "One");
     property_get("ro.product.device", device);
     ERROR("Found bootmid %s setting build properties for %s device\n", bootmid, device);
 }
