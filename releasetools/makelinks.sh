@@ -10,6 +10,14 @@ case $modelid in
     *)           variant="gsm" ;;
 esac
 
+case $modelid in
+    "PN0731000") telephony="cdma" ;;
+    "PN0720000") telephony="cdma" ;;
+    *)           telephony="gsm" ;;
+esac
+
+ln -s /init.target-$telephony.rc /init.target.rc ;
+
 basedir="/system/blobs/$variant/"
 cd $basedir
 chmod 755 bin/*
