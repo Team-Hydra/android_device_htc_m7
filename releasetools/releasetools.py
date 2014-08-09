@@ -18,6 +18,3 @@
 
 def FullOTA_InstallEnd(info):
   info.script.AppendExtra('assert(run_program("/system/bin/makelinks.sh") == 0);')
-  info.script.AppendExtra('ifelse(is_substring("PN0731000", getprop("ro.boot.mid")), run_program("/sbin/sh", "-c", "busybox cp /init.target-cdma.rc /init.target.rc"));')
-  info.script.AppendExtra('ifelse(is_substring("PN0720000", getprop("ro.boot.mid")), run_program("/sbin/sh", "-c", "busybox cp /init.target-cdma.rc /init.target.rc"));')
-  info.script.AppendExtra('ifelse(is_substring("*", getprop("ro.boot.mid")), run_program("/sbin/sh", "-c", "busybox cp /init.target-gsm.rc /init.target.rc"));')

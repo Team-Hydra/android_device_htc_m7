@@ -56,3 +56,5 @@ LOCAL_SRC_FILES		:= etc/init.recovery.qcom.rc
 LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
 
+include $(call all-makefiles-under,$(LOCAL_PATH))
+

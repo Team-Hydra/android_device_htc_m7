@@ -31,7 +31,8 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.target-cdma.rc \
     init.target-gsm.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    setinit
 
 # Recovery
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
