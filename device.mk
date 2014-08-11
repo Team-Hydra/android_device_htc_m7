@@ -29,10 +29,8 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.rc \
     init.qcom.usb.rc \
-    init.target-cdma.rc \
-    init.target-gsm.rc \
-    ueventd.qcom.rc \
-    setinit
+    init.target.rc \
+    ueventd.qcom.rc
 
 # Recovery
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
