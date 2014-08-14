@@ -64,7 +64,6 @@ void vendor_load_properties()
         property_set("persist.radio.snapshot_timer", "22");
         property_set("ro.ril.wp.feature", "1");
         property_set("ro.use_data_netmgrd", "true");
-        property_set("ro.com.google.clientidbase", "android-verizon");
     } else if (strstr(bootmid, "PN0720000")) {
         /* m7spr (m7whl) */
         cdma_properties("1", "10", "310120", "Sprint");
